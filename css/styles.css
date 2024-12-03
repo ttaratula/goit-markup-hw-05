@@ -475,7 +475,8 @@ p {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color, background-color;
 }
 
@@ -509,11 +510,11 @@ p {
 
 .modal-form {
 }
-.modal-form-field{
+.modal-form-field {
   margin-bottom: 8px;
 }
 
-.modal-form-field-comment{
+.modal-form-field-comment {
   margin-bottom: 16px;
 }
 .modal-form-label {
@@ -596,7 +597,6 @@ p {
 
 .modal-form-agrement {
   margin-bottom: 24px;
-
 }
 
 input[type='checkbox']:checked
@@ -623,8 +623,9 @@ input[type='checkbox']:checked
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
   margin-bottom: 24px;
   margin-top: 16px;
